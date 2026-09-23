@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LH Games</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jogos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Videogames</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Videogames</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"> >> Login << </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="O que deseja buscar?"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section-banners" class="container-fluid">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner1.PNG" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner2.PNG" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner3.PNG" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="section-vendidos" class="container-fluid">
+        <h2 class="text-center p-4">OS MAIS VENDIDOS</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/jogo1.PNG" class="card-img-top" alt="jogo 1" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Jogo 1</h5>
+                <p class="card-text">Jogo do ano</p>
+                <p class="card-text text-danger fw-bold">R$ 182,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="img/jogo2.PNG" class="card-img-top" alt="jogo 2" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Jogo 2</h5>
+                <p class="card-text">Jogo top de Linha</p>
+                <p class="card-text text-danger fw-bold">R$ 152,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="img/jogo3.PNG" class="card-img-top" alt="jogo 3" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Jogo 3</h5>
+                <p class="card-text">Melhor de todos</p>
+                <p class="card-text text-danger fw-bold">R$ 172,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center text-muted p-2">
+      <p>Direitos reservados LH Games</p>
+      <div class="d-flex justify-content-end">
+        <button
+          id="voltar-topo"
+          type="button"
+          class="btn btn-outline-primary"
+          onclick="topo()"
+        >
+          &uarr; Voltar ao topo
+        </button>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
